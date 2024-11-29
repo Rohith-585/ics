@@ -1,0 +1,36 @@
+Procedure
+1. Implementing WPA2 Security
+Log in to the D-Link router interface:
+Open a browser and type the router's IP address (e.g., 192.168.0.1 or 192.168.1.1).
+Enter the username and password (default is admin for both unless changed).
+Navigate to the Wireless tab.
+Under the Wi-Fi Protected Setup (WPS) section:
+Disable WPS if enabled for better security.
+Go to Wireless Network Settings:
+Set the SSID (WiFi name).
+Choose WPA2 in the security options.
+Enter a strong passphrase or password.
+Save the settings.
+Verify the changes by reconnecting to the WiFi network with the new password.
+2. Implementing IP-Based Security
+Access the D-Link router interface as explained above.
+Go to the Advanced tab.
+Navigate to the Firewall or IP Filtering section.
+Add an IP filtering rule:
+Specify the Source IP (device IP to allow/block).
+Specify the Destination IP (target router IP or other devices).
+Select the appropriate direction (incoming/outgoing traffic).
+Save the rule.
+Test by checking if the specified IPs are allowed or blocked correctly.
+3. Implementing MAC-Based Security
+Go to the Advanced tab in the router interface.
+Navigate to MAC Filtering under the Wireless Settings section.
+Enable MAC Filtering.
+Add MAC addresses:
+Specify the Source MAC Address (device to allow/block).
+Enter the MAC address of the device (can be found using ipconfig /all or ifconfig).
+Set the action:
+Allow only listed MAC addresses.
+Deny listed MAC addresses.
+Save the configuration.
+Test the network to ensure unauthorized devices are blocked from connecting.

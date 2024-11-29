@@ -1,0 +1,28 @@
+cd/var/www/html
+ls
+GitHub.digininja
+sudo git clone
+sudo mv DVWA to dvwa
+sudo chmod -R 777 dvwa
+cd dvwa
+cd config
+ls
+sudo cp config.inc.php.dist config.inc.php
+sudo nano config.inc.php
+user
+password
+
+sudo service my sql start
+sudo my sql -u root -p
+
+
+create database dvwa;
+create user  admin@127.0.0.1 identified by 'password';
+grant all on dvwa.* to admin@127.0.0.1;
+exit;
+
+cd/etc/php/8.2/apache2
+ls
+
+sudo nano php.ini
+sudo service apache2 start

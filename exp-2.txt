@@ -1,0 +1,21 @@
+mkdir rsa
+cd rsa
+ls
+cat enc.txt
+cat pubkey.pem
+openssl rsa -pubin -inform PEM -text -in <pubkey.pem
+
+copy hexadecimal value convert into decimal then factorize in factordb
+
+touch exploit.py
+cat exploit.py
+
+pip install pycryptodome
+
+python exploit.py
+
+ls
+
+openssl pkeyutl -decrypt -in enc.txt -out dec.txt -inkey private.pem
+
+cat dec.txt

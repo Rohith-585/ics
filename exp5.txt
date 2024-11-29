@@ -1,0 +1,22 @@
+sudo service apache2 start
+sudo service MySQL start
+ifconfig
+
+oprn cmd
+ipconfig 192.167....
+ping 192.....
+
+open VMware
+
+sudo iptables -A INPUT -s 192..... -j DROP
+
+
+cmd ping 192.
+
+VMware: sudo iptables -D INPUT -s 192..... -j DROP
+
+
+sudo iptables -A INPUT -s 192..... -p -tcp --destination-port 80 -j DROP
+sudo iptables -D INPUT -s 192..... -p -tcp --destination-port 80 -j DROP
+
+
